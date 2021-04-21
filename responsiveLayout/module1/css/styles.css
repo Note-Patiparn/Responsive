@@ -1,0 +1,80 @@
+html body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1.125rem;
+    color: #707070;
+}
+.container {
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.columns {
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.width75 {
+    width: 70%;
+}
+.width50 {
+    width: 45%;
+}
+.width25 {
+    width: 20%;
+}
+
+img {
+    width: 100%;
+}
+.p-bg {
+    background-color: #312614;
+    padding: 1em;
+    color: #FFF;
+    margin-top: 1.3em;
+}
+/* typo */
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #312614;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #707070;
+}
+
+p {
+    margin-top: 0;
+}
+.title-accent {
+    color: #013A55;
+}
+/* mediaquery */
+
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .width75,
+    .width50,
+    .width25 {
+        width: 90%;
+    }
+    .p-bg {
+        margin-top: 0;
+    }
+    h2 {
+        margin-top: 0.2em;
+    }
+}
+/* /* media query should come after the default that we already have */
